@@ -1,0 +1,231 @@
+html, body {
+	min-height: 100%;
+	/* padding:10%; */
+	margin-left: 2%;
+	margin-top: 5px;
+	}
+	form {
+	width: 100%;
+	padding: 20px;
+	border-radius: 6px;
+	background: #fff;
+	box-shadow: 0 0 8px  #669999; 
+	}
+	.heading {
+	position: relative;
+	background-color: rgba(0, 0, 0, 0.1);
+	height: 90px;
+	padding-left: 4%;
+	border-radius: 25px;
+	}
+	
+	input {
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding-left: 4%;
+	}
+	input {
+	width: calc(100% - 10px);
+	padding: 5px;
+	padding-left: 4%;
+	margin-top: 15px;
+	}
+	textarea::placeholder{
+		font-size: large;
+	}
+	
+	textarea:hover p, textarea:hover::placeholder {
+	color:  #669999;
+	}
+	.item input:hover{
+	border: 1px solid transparent;
+	box-shadow: 0 0 3px 0  #669999;
+	color: #669999;
+	}
+	.item {
+	position: relative;
+	margin: 10px 0;
+	}
+	.item span {
+	color: red;
+	}
+	.info{
+		margin-top: 15px;
+	}
+	.div-hover { background-color: #FFFFFF; }
+
+	.div-hover:hover { background-color: #e4e7f0; }
+	.info .heading{
+		background-color: rgba(0, 0, 0, 0.05);
+		margin-bottom: 10px;
+	}
+	.colums {
+	display:flex;
+	justify-content:space-between;
+	flex-direction:row;
+	flex-wrap:wrap;
+	padding-left: 4%;
+	margin-top: 20px;
+	}
+	
+	
+   
+	
+	.btn-block {
+	margin-top: 10px;
+	text-align: center;
+	}
+	button {
+	width: 150px;
+	padding: 10px;
+	border: none;
+	border-radius: 5px; 
+	background:  #669999;
+	font-size: 16px;
+	color: #fff;
+	cursor: pointer;
+	}
+	button:hover {
+	background:  #a3c2c2;
+	}
+	.blocks-content{
+		width: 25%;
+		float: left;
+		height:170px;
+		margin-bottom: 5%;
+	}
+	table.basic-table {
+		width: 100%;
+		border-collapse: separate;
+		border-spacing: 0;
+		border:none;
+		margin-bottom: 15px;
+		padding: 0% 4%;
+	}
+	
+	table.basic-table th {
+		background-color: #66676b;
+		text-align: left;
+		color: #fff;
+		vertical-align: top;
+		font-weight: 500;
+	}
+	
+	table.basic-table th:first-child { border-radius: 4px 0 0 4px; }
+	table.basic-table th:last-child { border-radius: 0 4px 4px 0; }
+	
+	
+	table.basic-table th,
+	table.basic-table td {
+		padding: 15px 28px;
+	}
+	
+	table.basic-table tr:nth-child(odd) {
+		background-color: #f4f4f4;
+	}
+	
+	table.basic-table { margin-bottom: 0; }
+
+	ul {
+		width: 100%;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	  }
+	  
+	  li {
+		float: left;
+	  }
+	  
+	  li a {
+		display: block;
+		padding: 8px;
+		background-color: #dddddd;
+	  }
+
+	#words li{
+		width: 90%;
+	}
+	#grade li{
+		width: 90%;
+	}
+	#grade li:hover{
+		background-color: white;
+		border-radius: 10px;
+	}
+	#words li:hover{
+		background-color: white;
+		border-radius: 10px;
+	}
+	#issues li{
+		width: 90%;
+	}
+	#navbar button{
+		padding-left: 0%;
+		padding-right: 0%;
+		width: 100px;
+		background-color: #807d7d;
+	}
+	#navbar button:hover{
+		background-color: #C0C0C0;
+		
+	}
+	#grade li,#grade p{
+		font-size: large;
+		font-weight: 600;
+		padding-top: 0.2%;
+		padding-bottom: 0.2%;
+		margin:2%;
+	}
+	#words li,p{
+		font-size: large;
+		font-weight: 600;
+		padding-top: 0.2%;
+		padding-bottom: 0.2%;
+		margin:1.5%;
+	}
+	#issues li,p{
+		font-size: large;
+		font-weight: 600;
+		padding-top: 0.2%;
+		padding-bottom: 0.2%;
+		margin:1.5%;
+	}
+	#issuesul2 li{
+		background-color: rgb(185, 243, 130);
+		padding-top: 0.5%;
+		padding-bottom: 0.5%;
+		
+	}
+	#issuesul1 u{
+		text-decoration: underline;
+  -webkit-text-decoration-color: red; /* Safari */  
+  text-decoration-color: red;
+	}
+	#issuesul li{
+		text-decoration: underline;
+  -webkit-text-decoration-color: blue; /* Safari */  
+  text-decoration-color: blue;
+	}
+	.greaterthan40{
+		background-color:#fafa72 !important;
+	}
+	.greaterthan30{
+		background-color:rgb(185, 243, 130) !important;
+	}
+	.spelling{
+		text-decoration: underline !important;
+  -webkit-text-decoration-color: red !important; /* Safari */  
+  text-decoration-color: red !important;
+  background-color:white !important;
+	}
+	.suggestion{
+		text-decoration: underline !important;
+  -webkit-text-decoration-color: blue !important; /* Safari */  
+  text-decoration-color: blue !important;
+  background-color:white !important;
+	}
+	.importantRule { background: #ffffff !important; }
+

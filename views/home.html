@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Clarity Checker</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <script src="/js/postrequest.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aws-sdk/2.7.28/aws-sdk.js"></script>
+  <link href="css/jquery.highlight-within-textarea.css" rel="stylesheet">
+		<script src="/js/jquery.highlight-within-textarea.js"></script>
+    <style>
+			.hwt-container {
+				background-color: #f8f9fa;
+				width: 100% !important;
+
+			}
+
+			.hwt-content {
+				width: 95% !important;
+				height: 100px;
+				padding: 20px;
+				border: 1px solid #adb5bd;
+				color: inherit;
+				
+			}
+
+			.hwt-input:focus {
+				outline-color: #495057;
+			}
+
+			.hwt-content mark {
+				border-radius: 3px;
+				background-color: #d0bfff;
+			}
+
+			.hwt-content mark.red {
+				background-color: #ffc9c9;
+			}
+
+			.hwt-content mark.blue {
+				background-color: #a3daff;
+			}
+
+			.hwt-content mark.yellow {
+				background-color: #ffec99;
+			}
+		</style>
+</head>
+
+<body style="width: 90%;">
+
+  <div class="testbox">
+    <form >
+      <div class="heading">
+        <h1>Email Clarity Checker</h1>
+        <h3 style="font-weight: 500;">The average reader's attention span is seven seconds in 2021. Create the perfect email copy by getting tips on how to improve your clarity.</h3>
+      </div>
+      <div class="colums" >
+        <div style="width: 72%;">
+          <label for="emailbody" style="font-weight: 600;font-size: large;width: 99%;">Email Body  <span style="color: red;">*</span></label><br><br>
+          <textarea id="emailbody" type="text" style="width: 99%;height: 500px;float: left;border-radius: 3%;" name="emailbody" placeholder="   Paste your Email body here to analyse and improve Email Clarity" required></textarea>
+        </div>
+        <div class="colums" id="small-dialog" style="display:none;background-color: rgba(0, 0, 0, 0.1);width: 25%;border-radius: 3%;padding-left: 2%;margin-left: 0%;">
+          <div id="navbar" style="width: 100%;display: none;">
+            <ul style="padding-top: 3%;padding-bottom: 3%;">
+            <button id="issuesbutton" style="font-size: large;font-weight: 600;">Issues</button>
+            <button id="gradebutton" style="font-size: large;font-weight: 600;">Grade</button>
+            <button id="wordsbutton" style="font-size: large;font-weight: 600;">Words</button>
+            
+            </ul>
+          </div>
+          <div id="grade" style="display: none;">
+            
+          </div>
+          <div id="words" style="display: none;">
+            
+          </div>
+          <div id="issues" style="margin-top: 0%;padding-top: 0%;float: left;">
+            <ul id="issuesul1"></ul>
+            <ul id="issuesul"></ul>
+            <ul id="issuesul2"></ul>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="btn-block">
+        <img id="loading-gif"
+                  style="margin:0px;padding-left: 2%;height: 40px;vertical-align: baseline;display: none;"
+                  src="/images/load-loading.gif" class="img-responsive" />
+        <button id="submitEmailClarifier" >Search</button>
+        <button id="empty" >Clear Results</button>
+      </div>
+    </form>
+    
+  </div>
+
+</body>
+
+</html>

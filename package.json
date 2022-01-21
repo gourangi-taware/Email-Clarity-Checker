@@ -1,0 +1,24 @@
+{
+  "name": "email-clarity-checker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gourangi-Taware",
+  "license": "ISC",
+  "dependencies": {
+    "exphbs": "^1.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^6.0.1",
+    "letter-count": "^3.2.0",
+    "spell-checker-js": "^1.2.6",
+    "syllables": "^1.0.0",
+    "text-readability": "^1.0.5",
+    "wordpos": "^2.1.0",
+    "write-good": "^1.0.8"
+  }
+}
