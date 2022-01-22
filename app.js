@@ -1,6 +1,5 @@
 var express = require("express");
 var path = require("path");
-var handlebars = require("express-handlebars");
 var bodyParser = require("body-parser");
 const { engine } = require('express-handlebars');
 const lc = require('letter-count');
@@ -15,8 +14,8 @@ var writeGood = require('write-good');
 var app = express();
 
 app.set("views", path.join(__dirname, "views"));
-app.engine('handlebars', engine({ extname: '.handlebars', defaultLayout: false,partialsDir: __dirname + '/views/partials/'}));
-app.set("view engine", "handlebars");
+// app.engine('handlebars', engine({ extname: '.handlebars', defaultLayout: false,partialsDir: __dirname + '/views/partials/'}));
+// app.set("view engine", "handlebars");
 
 app.use(express.static(path.join(__dirname + "/public")));
 
@@ -61,7 +60,6 @@ app.post("/submit", async function (req, res) {
     var syllable=syllables(long_sentences[i])
     if(syllable>40)
     {
-      //console.log(syllable);
       long_sentences_morethan30.push(long_sentences[i]);
     }
     else if(syllable>30 && syllable<40)
@@ -93,11 +91,7 @@ app.post("/submit", async function (req, res) {
   ans.rest= result.rest.length
   console.log(ans);
   return res.send(ans);
-})
-
-  
-  
-  
+})  
 });
 
 var port = process.env.PORT || 3000;
